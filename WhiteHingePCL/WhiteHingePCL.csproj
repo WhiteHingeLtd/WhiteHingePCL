@@ -34,10 +34,21 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Classes\LocationData.cs" />
+    <Compile Include="Classes\NewIssue.cs" />
+    <Compile Include="Classes\NewOrder.cs" />
+    <Compile Include="Classes\NewOrderStatus.cs" />
+    <Compile Include="Classes\NewPickListType.cs" />
+    <Compile Include="Classes\NewSkuSupplier.cs" />
+    <Compile Include="Classes\NewWhlSku.cs" />
+    <Compile Include="Classes\ReturnObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataRetrieval\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
