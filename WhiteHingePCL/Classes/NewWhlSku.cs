@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace WhiteHingePCL.Classes
 {
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class NewWhlSku
     {
         /// <summary>
@@ -22,6 +23,7 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// A list of all locations attached to the item
         /// </summary>
+        // ReSharper disable once CollectionNeverUpdated.Global
         public List<LocationData> Locations = new List<LocationData>();
 
         /// <summary>
@@ -58,4 +60,6 @@ namespace WhiteHingePCL.Classes
             return Locations.Where(x => x.LocType == type).ToList();
         }
     }
+
+
 }

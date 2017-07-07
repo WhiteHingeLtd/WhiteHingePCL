@@ -5,6 +5,7 @@ namespace WhiteHingePCL.Classes
     /// <summary>
     /// 
     /// </summary>
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class NewSkuSupplier
     {
         /// <summary>

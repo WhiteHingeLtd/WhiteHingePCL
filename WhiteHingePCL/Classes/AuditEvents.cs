@@ -1,44 +1,40 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace WhiteHingePCL.Classes
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    // ReSharper disable once ClassNeverInstantiated.Global
-    public class NewIssue
+    public enum AuditEvents
     {
-
         /// <summary>
         /// 
         /// </summary>
-        public NewOrderStatus IssueType = NewOrderStatus.DoNotUse;
+        ShitsFuckedYo = 0,
         /// <summary>
         /// 
         /// </summary>
-        public string IssueSku;
+        NewLocation = 1,
         /// <summary>
         /// 
         /// </summary>
-        public bool Resolved = false;
+        AdjustedStock = 2,
         /// <summary>
         /// 
         /// </summary>
-        public int ReportingUser = 0;
-
+        RemovedLocation = 3,
         /// <summary>
         /// 
         /// </summary>
-        public DateTime TimeReported;
-
+        AutoAdjustedStock = 4,
         /// <summary>
         /// 
         /// </summary>
-        public string Reason = "";
+        AutoRemovedStock = 5,
         /// <summary>
         /// 
         /// </summary>
-        public int Quantity = 1;
-
+        AutoAddedLocation = 6
     }
 }

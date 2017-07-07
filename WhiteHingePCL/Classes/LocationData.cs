@@ -1,103 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
+// ReSharper disable NotAccessedField.Global
+// ReSharper disable MemberCanBePrivate.Global
 
 namespace WhiteHingePCL.Classes
 {
-    public class LocationData
+    // ReSharper disable once ClassNeverInstantiated.Global
+    public partial class LocationData
     {
         /// <summary>
         /// 
         /// </summary>
-        public string SkuLocationId { get; set; }
+        public string SkuLocationId;
+
         /// <summary>
         /// 
         /// </summary>
-        public string ShelfName { get; set; }
+        public string ShelfName;
+
         /// <summary>
         /// 
         /// </summary>
-        public string Sku { get; set; }
+        public string Sku;
+
         /// <summary>
         /// 
         /// </summary>
-        public int LocationReferenceId { get; set; }
+        public int LocationReferenceId;
+
         /// <summary>
         /// 
         /// </summary>
-        public string LocationWarehouse { get; set; }
+        public string LocationWarehouse;
+
         /// <summary>
         /// The current route index for this location
         /// </summary>
-        public int PickRoute { get; set; }
+        public int PickRoute;
+
         /// <summary>
         /// The stocklevel in the location
         /// </summary>
-        public int StockLevel { get; set; }
-        /// <summary>
-        /// An enum which is used to select the correct warehouse for a location
-        /// </summary>
-        public enum Warehouse
-        {
-            /// <summary>
-            /// Unit 14
-            /// </summary>
-            Unit14 = 1,
-            /// <summary>
-            /// Unit 1
-            /// </summary>
-            Unit1 = 2,
-            /// <summary>
-            /// Test warehouse
-            /// </summary>
-            Test = 3
-        }
-
-        /// <summary>
-        /// An enum used to describe the location type of the location
-        /// </summary>
-        public enum LocationType
-        {
-            /// <summary>
-            /// Unused Location. This indicates an error with the location
-            /// </summary>
-            Unused = -1,
-            /// <summary>
-            /// Storage Locations
-            /// </summary>
-            Storage = 0,
-            /// <summary>
-            /// Pickable locations
-            /// </summary>
-            Pickable = 1,
-            /// <summary>
-            /// Prepack storage
-            /// </summary>
-            Prepack = 2,
-            /// <summary>
-            /// Delivery Storage
-            /// </summary>
-            Delivery = 3,
-            /// <summary>
-            /// Priority Prepack Locations
-            /// </summary>
-            PrepackInstant = 4,
-            /// <summary>
-            /// Items which have been transformed in Prepack
-            /// </summary>
-            PrepackComplete = 5,
-            /// <summary>
-            /// Damaged Items
-            /// </summary>
-            Damaged = 6,
-            /// <summary>
-            /// Items which have lost their locations
-            /// </summary>
-            Lost = 7,
-            /// <summary>
-            /// Returned items
-            /// </summary>
-            Returns = 8
-        }
+        public int StockLevel;
         /// <summary>
         /// 
         /// </summary>

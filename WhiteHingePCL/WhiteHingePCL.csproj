@@ -35,9 +35,12 @@
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AuditEvents.cs" />
     <Compile Include="Classes\LocationData.cs" />
+    <Compile Include="Classes\LocationType.cs" />
     <Compile Include="Classes\NewIssue.cs" />
     <Compile Include="Classes\NewOrder.cs" />
     <Compile Include="Classes\NewOrderStatus.cs" />
@@ -45,10 +48,18 @@
     <Compile Include="Classes\NewSkuSupplier.cs" />
     <Compile Include="Classes\NewWhlSku.cs" />
     <Compile Include="Classes\ReturnObject.cs" />
+    <Compile Include="Classes\Warehouse.cs" />
+    <Compile Include="Exceptions\ApiExceptions.cs" />
+    <Compile Include="Functions\MiscFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataRetrieval\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Visual Studio 2017\Projects\WebApi\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
