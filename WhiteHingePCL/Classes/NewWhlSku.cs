@@ -39,6 +39,10 @@ namespace WhiteHingePCL.Classes
         /// </summary>
         public List<string> Barcodes = new List<string>();
         /// <summary>
+        /// The weighted average sales per week of the item.
+        /// </summary>
+        public double WeeklySales;
+        /// <summary>
         /// Paramless constructor
         /// </summary>
         public NewWhlSku()
@@ -61,6 +65,14 @@ namespace WhiteHingePCL.Classes
         public List<LocationData> ReturnLocationsOfType(LocationData.LocationType type)
         {
             return Locations.Where(x => x.LocType == type).ToList();
+        }
+        /// <summary>
+        /// Finds the primary supplier for an item
+        /// </summary>
+        /// <returns>Returns the Supplier</returns>
+        public NewSkuSupplier GetPrimarySupplier()
+        {
+            return Suppliers.First(x => x.SupplierIsPrimary);
         }
     }
 
