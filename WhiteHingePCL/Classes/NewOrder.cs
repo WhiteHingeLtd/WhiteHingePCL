@@ -39,7 +39,7 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
-        public List<NewIssue> issues = new List<NewIssue>();
+        public List<NewIssue> Issues = new List<NewIssue>();
         /// <summary>
         /// 
         /// </summary>

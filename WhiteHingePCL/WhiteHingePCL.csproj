@@ -52,6 +52,8 @@
     <Compile Include="Classes\NewWhlSku.cs" />
     <Compile Include="Classes\ReturnObject.cs" />
     <Compile Include="Classes\Warehouse.cs" />
+    <Compile Include="Classes\Zone.cs" />
+    <Compile Include="Classes\ZoneData.cs" />
     <Compile Include="Exceptions\ApiExceptions.cs" />
     <Compile Include="Functions\MiscFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
