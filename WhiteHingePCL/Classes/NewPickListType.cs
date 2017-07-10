@@ -1,5 +1,8 @@
 ﻿namespace WhiteHingePCL.Classes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum NewPickListType
     {
         /// <summary>

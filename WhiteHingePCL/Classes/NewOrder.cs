@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace WhiteHingePCL.Classes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NewOrder
     {
         /// <summary>

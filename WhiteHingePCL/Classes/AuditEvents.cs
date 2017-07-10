@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WhiteHingePCL.Classes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum AuditEvents
     {
         /// <summary>

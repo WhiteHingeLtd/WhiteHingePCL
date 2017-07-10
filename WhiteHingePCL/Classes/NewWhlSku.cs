@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace WhiteHingePCL.Classes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     // ReSharper disable once ClassNeverInstantiated.Global
     public class NewWhlSku
     {

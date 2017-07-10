@@ -5,6 +5,9 @@ using System.Collections.Generic;
 
 namespace WhiteHingePCL.Classes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     // ReSharper disable once ClassNeverInstantiated.Global
     public partial class LocationData
     {

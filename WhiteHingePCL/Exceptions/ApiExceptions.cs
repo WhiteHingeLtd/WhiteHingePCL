@@ -2,6 +2,9 @@
 
 namespace WhiteHingePCL.Exceptions
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class IncorrectParametersException : Exception
     {
         /// <summary>Gets a message that describes the current exception.</summary>

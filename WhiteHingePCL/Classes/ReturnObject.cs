@@ -8,6 +8,10 @@ namespace WhiteHingePCL.Classes
     public class ReturnObject
     {
         /// <summary>
+        /// 
+        /// </summary>
+        public DateTime ReturnTime;
+        /// <summary>
         /// Checks if the call was successful or not
         /// </summary>
         public bool Success = true;
@@ -28,6 +32,7 @@ namespace WhiteHingePCL.Classes
             Success = true;
             ExceptionMessage = "";
             ReturnData = Data;
+            ReturnTime = DateTime.Now;
         }
         /// <summary>
         /// 
@@ -36,6 +41,7 @@ namespace WhiteHingePCL.Classes
         /// <param name="message"></param>
         public ReturnObject(Exception ex, string message)
         {
+            ReturnTime = DateTime.Now;
             Success = false;
             ExceptionMessage = ex.Message;
             ReturnData = ex;
