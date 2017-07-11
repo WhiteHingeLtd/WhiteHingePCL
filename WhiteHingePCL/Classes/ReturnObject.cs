@@ -43,7 +43,7 @@ namespace WhiteHingePCL.Classes
         {
             ReturnTime = DateTime.Now;
             Success = false;
-            ExceptionMessage = ex.Message;
+            ExceptionMessage = message;
             ReturnData = ex;
         }
 
