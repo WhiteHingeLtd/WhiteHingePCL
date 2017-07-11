@@ -6,10 +6,22 @@ using System.Threading.Tasks;
 
 namespace WhiteHingePCL.Classes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum ReplenishmentTypes
     {
-        Issues = 1,
+        /// <summary>
+        /// 
+        /// </summary>
+        Issues = 1, 
+        /// <summary>
+        /// 
+        /// </summary>
         Demand = 2,
+        /// <summary>
+        /// 
+        /// </summary>
         Low_Levels = 3
     }
 }
