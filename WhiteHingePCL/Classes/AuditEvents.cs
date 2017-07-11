@@ -38,6 +38,26 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
-        AutoAddedLocation = 6
+        AutoAddedLocation = 6,
+        /// <summary>
+        /// 
+        /// </summary>
+        Adjust_Add = 11,
+        /// <summary>
+        /// 
+        /// </summary>
+        Adjust_Remove = 12,
+        /// <summary>
+        /// 
+        /// </summary>
+        Adjust_Set = 13,
+        /// <summary>
+        /// 
+        /// </summary>
+        Move_From = 14,
+        /// <summary>
+        /// 
+        /// </summary>
+        Move_To = 15,
     }
 }
