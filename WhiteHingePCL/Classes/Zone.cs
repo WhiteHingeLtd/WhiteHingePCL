@@ -16,10 +16,11 @@ namespace WhiteHingePCL.Classes
         /// 
         /// </summary>
         public string ZoneName;
+
         /// <summary>
         /// 
         /// </summary>
-        public int ItemCount => Items.Count;
+        public int ItemCount;
         /// <summary>
         /// 
         /// </summary>
@@ -38,7 +39,7 @@ namespace WhiteHingePCL.Classes
             {
                 ZoneId = -1;
             }
-            
+            ItemCount = Items.Count;
             ZoneName = zoneName;
         }
     }

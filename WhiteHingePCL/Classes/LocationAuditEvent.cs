@@ -59,8 +59,8 @@ namespace WhiteHingePCL.Classes
         {
             Sku = laDict["ShortSku"].ToString();
             Event = (AuditEvents) Convert.ToInt32(laDict["AuditEvent"]);
-            EmployeeId = (int)laDict["AuditUserId"];
-            OriginalLocationId = (int) laDict["LocationID"];
+            EmployeeId = (int)laDict["AuditUserID"];
+            OriginalLocationId = Convert.ToInt32(laDict["LocationID"]);
             NewLocationId = -1;
             Amount = (int) laDict["Additional"];
             EventSource = laDict["EventSource"].ToString();
