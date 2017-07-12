@@ -39,7 +39,6 @@ namespace WhiteHingePCL.Classes
             {
                 ZoneId = -1;
             }
-            ItemCount = Items.Count;
             ZoneName = zoneName;
         }
     }

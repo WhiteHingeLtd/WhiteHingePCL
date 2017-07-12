@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace WhiteHingePCL.Classes
 {
@@ -46,6 +47,17 @@ namespace WhiteHingePCL.Classes
             ExceptionMessage = message;
             ReturnData = ex;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="possibleSkus"></param>
+        /// <param name="failed"></param>
+        public ReturnObject(Dictionary<string, string> possibleSkus, bool failed)
+        {
+            ReturnTime = DateTime.Now;
+            Success = failed;
+            ExceptionMessage = "Pick the correct Item";
+            ReturnData = possibleSkus;
+        }
     }
 }
