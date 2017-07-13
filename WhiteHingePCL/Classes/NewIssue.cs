@@ -39,6 +39,9 @@ namespace WhiteHingePCL.Classes
         /// 
         /// </summary>
         public int Quantity = 1;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        public int OrderId;
     }
 }
