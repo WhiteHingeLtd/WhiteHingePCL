@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -75,6 +76,14 @@ namespace WhiteHingePCL.Classes
             LocationInfo = loc;
             ItemData = item;
             CurrentZoneDataType = ZoneDataType.LowLevel;
+            
+        }
+        /// <summary>
+        /// This constructor is only for use by Newtonsoft
+        /// </summary>
+        [JsonConstructor]
+        public ZoneData()
+        {
             
         }
         /// <summary>
