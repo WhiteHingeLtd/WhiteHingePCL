@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace WhiteHingePCL.Classes
 {
@@ -45,6 +46,7 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// Paramless constructor
         /// </summary>
+        [JsonConstructor]
         public NewWhlSku()
         {
 

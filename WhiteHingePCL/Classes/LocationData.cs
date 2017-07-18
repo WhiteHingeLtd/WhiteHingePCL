@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+
 // ReSharper disable NotAccessedField.Global
 // ReSharper disable MemberCanBePrivate.Global
 
@@ -68,6 +70,7 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
+        [JsonConstructor]
         public LocationData()
         {
 
