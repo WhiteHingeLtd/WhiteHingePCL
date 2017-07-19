@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 
@@ -23,7 +24,10 @@ namespace WhiteHingePCL.Classes
         /// The item's title
         /// </summary>
         public string ItemTitle = string.Empty;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        public int Packsize => Convert.ToInt32(Sku.Substring(7));
         /// <summary>
         /// A list of all locations attached to the item
         /// </summary>
