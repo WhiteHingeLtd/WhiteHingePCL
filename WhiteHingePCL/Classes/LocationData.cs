@@ -52,7 +52,7 @@ namespace WhiteHingePCL.Classes
         /// </summary>
         public LocationType LocType = LocationType.Unused;
         /// <summary>
-        /// 
+        /// Constructor for use with the SelectDataDictionaryMethod from framework
         /// </summary>
         /// <param name="dataDict">Requires a line from sku_locations with locationreference attached</param>
         public LocationData(Dictionary<string, object> dataDict)
@@ -68,7 +68,7 @@ namespace WhiteHingePCL.Classes
         }
 
         /// <summary>
-        /// 
+        /// Parameterless constructor for use with Newtonsoft
         /// </summary>
         [JsonConstructor]
         public LocationData()
