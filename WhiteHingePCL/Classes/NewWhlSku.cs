@@ -80,6 +80,23 @@ namespace WhiteHingePCL.Classes
         {
             return Suppliers.First(x => x.SupplierIsPrimary);
         }
+        /// <summary>
+        /// Checks if the stock level of the item is greater than 0 in the picking location (i.e can be picked with no issues)
+        /// </summary>
+        /// <returns>True if there is stock, else false</returns>
+        public bool HasStockInPrimaryLocation()
+        {
+            return GetPickingLocation().StockLevel > 0;
+        }
+        /// <summary>
+        /// Checks if the Item has the required amount of stock.
+        /// </summary>
+        /// <param name="quantity">The amount of stock required by an order</param>
+        /// <returns></returns>
+        public bool HasRequiredStockInPrimaryLocation(int quantity)
+        {
+            return GetPickingLocation().StockLevel >= quantity;
+        }
     }
 
 
