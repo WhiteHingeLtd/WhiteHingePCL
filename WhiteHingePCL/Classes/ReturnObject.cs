@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
+
 // ReSharper disable NotAccessedField.Global
 
 namespace WhiteHingePCL.Classes
@@ -59,6 +61,15 @@ namespace WhiteHingePCL.Classes
             Success = failed;
             ExceptionMessage = "Pick the correct Item";
             ReturnData = possibleSkus;
+        }
+
+        /// <summary>
+        /// Paramless pls no
+        /// </summary>
+        [JsonConstructor]
+        public ReturnObject()
+        {
+            
         }
     }
 }
