@@ -48,6 +48,11 @@ namespace WhiteHingePCL.Classes
         /// The weighted average sales per week of the item.
         /// </summary>
         public double WeeklySales;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public NewSkuData NewData;
         /// <summary>
         /// Paramless constructor
         /// </summary>
@@ -56,6 +61,7 @@ namespace WhiteHingePCL.Classes
         {
 
         }
+        #region Methods
         /// <summary>
         /// A simple method to retrieve the first Pickable location of an item. Each item should have only one pickable location.
         /// </summary>
@@ -98,30 +104,58 @@ namespace WhiteHingePCL.Classes
         {
             return GetPickingLocation().StockLevel >= quantity;
         }
-
+        #endregion
         /// <summary>
-        /// Checks if the item is discontinued on all of the suppliers.
+        /// 
         /// </summary>
-        /// <returns></returns>
-        public bool IsDiscontinued()
+        public class NewSkuData
         {
-            return Suppliers.All(supplier => supplier.SupplierIsDiscontinued);
-        }
-
-        /// <summary>
-        /// Gets the amount of stock of this item in all locations.
-        /// </summary>
-        /// <returns>The amount of stock for this packsize. This is units of this packsize, not single units. So 4 packs of 10 would return 4, not 40, for example.</returns>
-        public int StockLevel()
-        {
-            var returnable = 0;
-            foreach (LocationData location in Locations)
+            /// <summary>
+            /// 
+            /// </summary>
+            public int weight;
+            /// <summary>
+            /// 
+            /// </summary>
+            public string PackingType;
+            /// <summary>
+            /// 
+            /// </summary>
+            public bool IsPackdown;
+            /// <summary>
+            /// 
+            /// </summary>
+            public PostalType NewPostalType;
+            /// <summary>
+            /// 
+            /// </summary>
+            public enum PostalType
             {
-                returnable += location.StockLevel;
+                /// <summary>
+                /// 
+                /// </summary>
+                NULL = 0,
+                /// <summary>
+                /// 
+                /// </summary>
+                Letter = 1,
+                /// <summary>
+                /// 
+                /// </summary>
+                Packet = 2,
+                /// <summary>
+                /// 
+                /// </summary>
+                Courier = 3
             }
-            return returnable;
+            /// <summary>
+            /// 
+            /// </summary>
+            [JsonConstructor]
+            public NewSkuData()
+            {
+                
+            }
         }
     }
-
-
 }
