@@ -24,10 +24,11 @@ namespace WhiteHingePCL.Classes
         /// The item's title
         /// </summary>
         public string ItemTitle = string.Empty;
+
         /// <summary>
         /// 
         /// </summary>
-        public int Packsize => Convert.ToInt32(Sku.Substring(7));
+        public int Packsize => int.TryParse(Sku.Substring(7), out int i) ? i : 0;
         /// <summary>
         /// A list of all locations attached to the item
         /// </summary>
