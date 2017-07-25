@@ -104,6 +104,32 @@ namespace WhiteHingePCL.Classes
         {
             return GetPickingLocation().StockLevel >= quantity;
         }
+
+
+        /// <summary>
+        /// Checks if the item is discontinued on all of the suppliers.
+        /// </summary>
+        /// <returns></returns>
+        public bool IsDiscontinued()
+        {
+            return Suppliers.All(supplier => supplier.SupplierIsDiscontinued);
+        }
+
+        /// <summary>
+        /// Gets the amount of stock of this item in all locations.
+        /// 
+        /// </summary>
+        /// <returns>The amount of stock for this packsize. This is units of this packsize, not single units. So 4 packs of 10 would return 4, not 40, for example.</returns>
+        public int StockLevel()
+        {
+            var returnable = 0;
+            foreach (LocationData location in Locations)
+            {
+                returnable += location.StockLevel;
+            }
+            return returnable;
+        }
+
         #endregion
         /// <summary>
         /// 
