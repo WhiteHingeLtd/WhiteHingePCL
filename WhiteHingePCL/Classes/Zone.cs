@@ -33,7 +33,7 @@ namespace WhiteHingePCL.Classes
         {
             try
             {
-                ZoneId = Convert.ToInt32(char.GetNumericValue(ZoneName[0]));
+                ZoneId = Convert.ToInt32(ZoneName[0]);
             }
             catch (Exception)
             {
