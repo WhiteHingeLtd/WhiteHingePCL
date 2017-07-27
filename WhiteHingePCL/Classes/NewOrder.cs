@@ -25,10 +25,11 @@ namespace WhiteHingePCL.Classes
         /// The current OrderStatus, defaults to DoNotUse
         /// </summary>
         public NewOrderStatus State = NewOrderStatus.DoNotUse;
+
         /// <summary>
         /// 
         /// </summary>
-        public int ItemCount => ItemData.Count;
+        public int ItemCount;
 
         /// <summary>
         /// The Postal Service used for this order

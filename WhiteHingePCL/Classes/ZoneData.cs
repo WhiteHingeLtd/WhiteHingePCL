@@ -40,6 +40,14 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
+        public int MinimumInLocation = 0;
+        /// <summary>
+        /// 
+        /// </summary>
+        public int MaximumInLocation = 100;
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="item"></param>
         /// <param name="loc"></param>
         /// <param name="order"></param>
@@ -69,14 +77,16 @@ namespace WhiteHingePCL.Classes
         /// </summary>
         /// <param name="item"></param>
         /// <param name="loc"></param>
-        /// <param name="suggestedAmount"></param>
+        /// <param name="minimumAmount"></param>
         /// <param name="capableAmount"></param>
-        public ZoneData(NewWhlSku item, LocationData loc,int suggestedAmount,int capableAmount)
+        public ZoneData(NewWhlSku item, LocationData loc,int minimumAmount,int capableAmount)
         {
             LocationInfo = loc;
+            LocationInfo.Sku = item.Sku;
             ItemData = item;
             CurrentZoneDataType = ZoneDataType.LowLevel;
-            
+            MaximumInLocation = capableAmount;
+            MinimumInLocation = minimumAmount;
         }
         /// <summary>
         /// This constructor is only for use by Newtonsoft
