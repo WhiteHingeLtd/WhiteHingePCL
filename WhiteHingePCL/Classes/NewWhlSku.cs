@@ -53,6 +53,7 @@ namespace WhiteHingePCL.Classes
         /// 
         /// </summary>
         public NewSkuData NewData;
+        
         /// <summary>
         /// Paramless constructor
         /// </summary>
@@ -152,6 +153,11 @@ namespace WhiteHingePCL.Classes
             /// 
             /// </summary>
             public PostalType NewPostalType;
+
+            /// <summary>
+            /// 
+            /// </summary>
+            public bool IsListed;
             /// <summary>
             /// 
             /// </summary>
