@@ -47,6 +47,7 @@
     <Compile Include="Classes\LocationType.cs" />
     <Compile Include="Classes\NewEmployee.cs" />
     <Compile Include="Classes\NewEmployeeCollection.cs" />
+    <Compile Include="Classes\NewEnvelope.cs" />
     <Compile Include="Classes\NewIssue.cs" />
     <Compile Include="Classes\NewOrder.cs" />
     <Compile Include="Classes\NewOrderStatus.cs" />
