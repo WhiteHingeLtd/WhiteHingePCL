@@ -39,6 +39,10 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
+        public bool IsSupervisor;
+        /// <summary>
+        /// 
+        /// </summary>
         public int PayrollId => UserId;
         /// <summary>
         /// The user's full name
@@ -56,6 +60,7 @@ namespace WhiteHingePCL.Classes
             Visible = Convert.ToInt32(sqlData["NotShowOnTable"]) != 1;
             HashedPin = sqlData["HashedPin"].ToString();
             AdUser = sqlData["ActiveDirectoryUser"].ToString();
+            IsSupervisor = Convert.ToBoolean(sqlData["IsSupervisor"]);
             try
             {
                 Timeout = Convert.ToInt32(sqlData["LoginTimeout"]);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace WhiteHingePCL.Classes
 {
@@ -53,6 +54,14 @@ namespace WhiteHingePCL.Classes
             {
                 this.Add(new NewEmployee(result));
             }
+        }
+        /// <summary>
+        /// Json Constructor for the NewEmpColl
+        /// </summary>
+        [JsonConstructor]
+        public NewEmployeeCollection()
+        {
+            
         }
     }
 }
