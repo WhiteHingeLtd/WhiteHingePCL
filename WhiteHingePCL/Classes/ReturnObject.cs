@@ -9,7 +9,7 @@ namespace WhiteHingePCL.Classes
     /// <summary>
     /// The return object for all API Calls
     /// </summary>
-    public class ReturnObject
+    public class ReturnObject <TReturnDataType>
     {
         /// <summary>
         /// 
@@ -30,9 +30,13 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
+        public TReturnDataType ActualReturnDataType;
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="Data"></param>
         public ReturnObject(object Data)
-        {
+        {          
             Success = true;
             ExceptionMessage = "";
             ReturnData = Data;
