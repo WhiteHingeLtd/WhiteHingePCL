@@ -183,6 +183,14 @@ namespace WhiteHingePCL.Classes
             /// <summary>
             /// 
             /// </summary>
+            public int PickingMinimum;
+            /// <summary>
+            /// 
+            /// </summary>
+            public int PickingMaximum;
+            /// <summary>
+            /// 
+            /// </summary>
             [JsonConstructor]
             public NewSkuData()
             {
