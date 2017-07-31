@@ -14,28 +14,29 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
-        ShitsFuckedYo = 0,
+        Default = 0,
         /// <summary>
-        /// 
+        /// Used for Adding a New Location
         /// </summary>
         NewLocation = 1,
         /// <summary>
-        /// 
+        /// Used for changing a stock amount
         /// </summary>
         AdjustedStock = 2,
         /// <summary>
-        /// 
+        /// Used for removing items from a location
         /// </summary>
         RemovedLocation = 3,
         /// <summary>
-        /// 
+        /// Auto Adjusting stock, Used for Surface Picker
         /// </summary>
         AutoAdjustedStock = 4,
         /// <summary>
-        /// 
+        /// Auto Removal of Stock, Used for Prepack
         /// </summary>
         AutoRemovedStock = 5,
         /// <summary>
+        /// Used for automatically adding a location, such as for new items
         /// 
         /// </summary>
         AutoAddedLocation = 6,
