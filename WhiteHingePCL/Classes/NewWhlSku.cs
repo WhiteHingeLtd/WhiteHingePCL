@@ -140,9 +140,13 @@ namespace WhiteHingePCL.Classes
             /// <summary>
             /// 
             /// </summary>
+            public string GS1Barcode;
+            /// <summary>
+            /// The weight in grams
+            /// </summary>
             public int weight;
             /// <summary>
-            /// 
+            /// The Linnworks packing Type
             /// </summary>
             public string PackingType;
             /// <summary>
@@ -153,7 +157,6 @@ namespace WhiteHingePCL.Classes
             /// 
             /// </summary>
             public PostalType NewPostalType;
-
             /// <summary>
             /// 
             /// </summary>
