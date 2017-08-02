@@ -66,6 +66,7 @@ namespace WhiteHingePCL.Classes
             EventSource = laDict["EventSource"].ToString();
             FriendlyString = laDict["FriendlyString"].ToString();
             DateTime.TryParse(laDict["DateOfEvent"].ToString(), out AuditTime);
+            AuditEventId = laDict["AuditID"].ToString();
         }
     }
 }
