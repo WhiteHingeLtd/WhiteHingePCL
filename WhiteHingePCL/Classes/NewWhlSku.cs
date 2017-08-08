@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace WhiteHingePCL.Classes
 {
     /// <summary>
-    /// 
+    /// A New Sku class to be used across multiple platforms, containing only the required data
     /// </summary>
     // ReSharper disable once ClassNeverInstantiated.Global
     public class NewWhlSku
