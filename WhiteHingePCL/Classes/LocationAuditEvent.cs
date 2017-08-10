@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace WhiteHingePCL.Classes
 {
@@ -67,6 +68,14 @@ namespace WhiteHingePCL.Classes
             FriendlyString = laDict["FriendlyString"].ToString();
             DateTime.TryParse(laDict["DateOfEvent"].ToString(), out AuditTime);
             AuditEventId = laDict["AuditID"].ToString();
+        }
+        /// <summary>
+        /// Parameterless constructor for use with Newtonsoft
+        /// </summary>
+        [JsonConstructor]
+        public LocationAuditEvent()
+        {
+            
         }
     }
 }
