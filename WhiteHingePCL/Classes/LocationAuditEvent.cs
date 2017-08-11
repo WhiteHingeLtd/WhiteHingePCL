@@ -52,8 +52,32 @@ namespace WhiteHingePCL.Classes
         /// 
         /// </summary>
         public string FriendlyString;
+
+        /// <summary>
+        /// The Employee's Full Name
+        /// </summary>
+        public string EmployeeFullName;
         /// <summary>
         /// 
+        /// </summary>
+        public string OriginalLocationName;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string NewLocationName;
+
+        public int Packsize
+        {
+            get
+            {
+                int result = 0;
+                int.TryParse(Sku.Substring(7), out result);
+                return result;
+            }
+        }
+
+        /// <summary>
+        /// A constructor for use with the MySQL Database
         /// </summary>
         /// <param name="laDict">Audit Event from the LocationAuditTable</param>
         public LocationAuditEvent(Dictionary<string, object> laDict)
@@ -68,6 +92,26 @@ namespace WhiteHingePCL.Classes
             FriendlyString = laDict["FriendlyString"].ToString();
             DateTime.TryParse(laDict["DateOfEvent"].ToString(), out AuditTime);
             AuditEventId = laDict["AuditID"].ToString();
+        }
+        /// <summary>
+        /// For use with the MySQL Database and Combined with the NewEmployeeCollections
+        /// </summary>
+        /// <param name="queryDict"></param>
+        /// <param name="newEmpColl"></param>
+        public LocationAuditEvent(Dictionary<string, object> queryDict,NewEmployeeCollection newEmpColl)
+        {
+            Sku = queryDict["ShortSku"].ToString();
+            Event = (AuditEvents) Convert.ToInt32(queryDict["AuditEvent"]);
+            EmployeeId = (int)queryDict["AuditUserID"];
+            OriginalLocationId = Convert.ToInt32(queryDict["LocationID"]);
+            NewLocationId = -1;
+            Amount = (int) queryDict["Additional"];
+            EventSource = queryDict["EventSource"].ToString();
+            FriendlyString = queryDict["FriendlyString"].ToString();
+            DateTime.TryParse(queryDict["DateOfEvent"].ToString(), out AuditTime);
+            AuditEventId = queryDict["AuditID"].ToString();
+            EmployeeFullName = newEmpColl.FindUserById(EmployeeId).Fullname;
+            OriginalLocationName = queryDict["LocationText"].ToString();
         }
         /// <summary>
         /// Parameterless constructor for use with Newtonsoft
