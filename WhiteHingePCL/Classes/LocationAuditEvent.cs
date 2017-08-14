@@ -65,7 +65,9 @@ namespace WhiteHingePCL.Classes
         /// 
         /// </summary>
         public string NewLocationName;
-
+        /// <summary>
+        /// 
+        /// </summary>
         public int Packsize
         {
             get
