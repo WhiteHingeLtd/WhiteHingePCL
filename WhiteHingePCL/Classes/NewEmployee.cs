@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Security.Principal;
 
 namespace WhiteHingePCL.Classes
 {
@@ -81,5 +79,7 @@ namespace WhiteHingePCL.Classes
         /// 
         /// </summary>
         public bool Visible;
+
     }
+
 }

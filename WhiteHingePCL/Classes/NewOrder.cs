@@ -52,6 +52,10 @@ namespace WhiteHingePCL.Classes
         /// </summary>
         public Dictionary<NewWhlSku,int> ItemData = new Dictionary<NewWhlSku, int>();
         /// <summary>
+        /// 
+        /// </summary>
+        public Dictionary<string, int> SimpleItemData = new Dictionary<string, int>();
+        /// <summary>
         /// The PickList type
         /// </summary>
         public NewPickListType PicklistType = 0;

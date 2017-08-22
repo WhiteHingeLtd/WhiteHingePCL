@@ -57,20 +57,28 @@ namespace WhiteHingePCL.Classes
             ItemData = item;
             CurrentZoneDataType = ZoneDataType.Demand;
             OrderData = order;
+            try
+            {
+                AmountNeeded = order.SimpleItemData.First(x => x.Key == item.Sku).Value;
+            }
+            catch (Exception)
+            {
+                AmountNeeded = 0;
+            }   
         }
         /// <summary>
         /// 
         /// </summary>
         /// <param name="item"></param>
         /// <param name="loc"></param>
-        /// <param name="order"></param>
-        public ZoneData(NewWhlSku item, LocationData loc,NewIssue order)
+        /// <param name="newIssue"></param>
+        public ZoneData(NewWhlSku item, LocationData loc,NewIssue newIssue)
         {
             LocationInfo = loc;
             ItemData = item;
-            IssueData  = order;
+            IssueData  = newIssue;
             CurrentZoneDataType = ZoneDataType.Issue;
-            AmountNeeded = order.Quantity;
+            AmountNeeded = newIssue.Quantity;
         }
         /// <summary>
         /// 

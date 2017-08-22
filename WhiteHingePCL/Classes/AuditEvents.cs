@@ -61,14 +61,4 @@ namespace WhiteHingePCL.Classes
         /// </summary>
         Move_To = 15,
     }
-    /// <summary>
-    /// 
-    /// </summary>
-    public class AuditEventHandler
-    {
-        public static Dictionary<int, string> GetAuditEvents()
-        {
-            return Enum.GetValues(typeof(AuditEvents)).Cast<AuditEvents>().ToDictionary(foo => (int) foo, foo => foo.ToString());
-        }
-    }
 }
