@@ -77,6 +77,10 @@ namespace WhiteHingePCL.Classes
                 return result;
             }
         }
+        /// <summary>
+        /// The total counted so far. 
+        /// </summary>
+        public int Total = int.MinValue;
 
         /// <summary>
         /// A constructor for use with the MySQL Database
