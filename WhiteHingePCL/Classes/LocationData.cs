@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 namespace WhiteHingePCL.Classes
 {
     /// <summary>
-    /// 
+    /// Location data used for Skus
     /// </summary>
     // ReSharper disable once ClassNeverInstantiated.Global
     public partial class LocationData
