@@ -98,6 +98,7 @@ namespace WhiteHingePCL.Classes
             FriendlyString = laDict["FriendlyString"].ToString();
             DateTime.TryParse(laDict["DateOfEvent"].ToString(), out AuditTime);
             AuditEventId = laDict["AuditID"].ToString();
+            int.TryParse(laDict["TotalAtTime"].ToString(), out Total);
         }
         /// <summary>
         /// For use with the MySQL Database and Combined with the NewEmployeeCollections
@@ -118,6 +119,7 @@ namespace WhiteHingePCL.Classes
             AuditEventId = queryDict["AuditID"].ToString();
             EmployeeFullName = newEmpColl.FindUserById(EmployeeId).Fullname;
             OriginalLocationName = queryDict["LocationText"].ToString();
+            int.TryParse(queryDict["TotalAtTime"].ToString(), out Total);
         }
         /// <summary>
         /// Parameterless constructor for use with Newtonsoft
