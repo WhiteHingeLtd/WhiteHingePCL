@@ -54,6 +54,7 @@
     <Compile Include="Classes\NewPickListType.cs" />
     <Compile Include="Classes\NewSkuSupplier.cs" />
     <Compile Include="Classes\NewWhlSku.cs" />
+    <Compile Include="Classes\MispickStatistic.cs" />
     <Compile Include="Classes\ReplenishmentSettings\ReplenishmentAuditType.cs" />
     <Compile Include="Classes\ReplenishmentSettings\ReplenishmentLog.cs" />
     <Compile Include="Classes\ReplenishmentSettings\ReplenishmentSettings.cs" />

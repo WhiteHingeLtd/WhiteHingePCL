@@ -156,6 +156,19 @@ namespace WhiteHingePCL.Classes
             /// <summary>
             /// 
             /// </summary>
+            public bool IsPrepack;
+
+            /// <summary>
+            /// The amount of times the item was picked in the last 4 weeks, averaged to pwe week..
+            /// </summary>
+            public double PicksPerWeek;
+            /// <summary>
+            /// Data related to the issues that were raised on the item in the last 4 weeks.
+            /// </summary>
+            public MispickStatistic MissedPicks;
+            /// <summary>
+            /// 
+            /// </summary>
             public PostalType NewPostalType;
             /// <summary>
             /// 
