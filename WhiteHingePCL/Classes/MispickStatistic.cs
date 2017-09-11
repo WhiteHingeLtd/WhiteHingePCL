@@ -27,7 +27,7 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// The last time the item was issued to prepack
         /// </summary>
-        public  DateTime? LastPrepack;
+        public DateTime? LastPrepack;
         /// <summary>
         /// the last time the item was issued to cantfind
         /// </summary>

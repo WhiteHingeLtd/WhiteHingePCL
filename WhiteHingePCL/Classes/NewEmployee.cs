@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Principal;
 
 namespace WhiteHingePCL.Classes
 {
@@ -24,7 +23,7 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// The MD5 Hashed pin of the user 
         /// </summary>
-        public string HashedPin; // Todo Update to a better security algorithm
+        public string HashedPin; 
         /// <summary>
         /// Timeout in seconds
         /// </summary>
