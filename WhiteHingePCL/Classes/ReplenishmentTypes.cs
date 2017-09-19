@@ -22,6 +22,10 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
-        Low_Levels = 3
+        Low_Levels = 3,
+        /// <summary>
+        /// 
+        /// </summary>
+        Splits = 4
     }
 }
