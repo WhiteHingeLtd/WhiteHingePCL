@@ -59,7 +59,7 @@ namespace WhiteHingePCL.Classes
         {
             SkuLocationId = dataDict["id"].ToString();
             ShelfName = dataDict["shelfName"].ToString();
-            Sku = dataDict["Sku"].ToString();
+            Sku = dataDict["Shortsku"].ToString();
             LocationReferenceId = Convert.ToInt32(dataDict["locID"]);
             LocationWarehouse = ((Warehouse)Convert.ToInt32(dataDict["locWarehouse"])).ToString();
             PickRoute = Convert.ToInt32(dataDict["RouteID"]);
