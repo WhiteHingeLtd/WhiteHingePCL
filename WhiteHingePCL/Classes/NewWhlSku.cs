@@ -45,10 +45,13 @@ namespace WhiteHingePCL.Classes
         /// </summary>
         public List<string> Barcodes = new List<string>();
         /// <summary>
-        /// The combined weekly sales of an Item and its packsizes
+        /// The weighted average sales per week of the item.
         /// </summary>
         public double WeeklySales;
-
+        /// <summary>
+        /// The combined weekly sales per week of the item and it's packsizes
+        /// </summary>
+        public double CombinedWeekly;
         /// <summary>
         /// 
         /// </summary>
