@@ -58,12 +58,12 @@ namespace WhiteHingePCL.Classes
         public LocationData(Dictionary<string, object> dataDict)
         {
             SkuLocationId = dataDict["id"].ToString();
-            ShelfName = dataDict["shelfName"].ToString();
+            ShelfName = dataDict["Shelfname"].ToString();
             Sku = dataDict["Shortsku"].ToString();
             LocationReferenceId = Convert.ToInt32(dataDict["locID"]);
             LocationWarehouse = ((Warehouse)Convert.ToInt32(dataDict["locWarehouse"])).ToString();
             PickRoute = Convert.ToInt32(dataDict["RouteID"]);
-            StockLevel = Convert.ToInt32(dataDict["additionalInfo"]);
+            StockLevel = Convert.ToInt32(dataDict["StockLevel"]);
             LocType = (LocationType)Convert.ToInt32(dataDict["locType"]);
         }
 
