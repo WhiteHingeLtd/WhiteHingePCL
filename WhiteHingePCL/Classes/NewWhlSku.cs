@@ -210,11 +210,16 @@ namespace WhiteHingePCL.Classes
             /// <summary>
             /// 
             /// </summary>
+            public int LinnworksStock;
+            /// <summary>
+            /// 
+            /// </summary>
             [JsonConstructor]
             public NewSkuData()
             {
                 
             }
+
         }
     }
 }
