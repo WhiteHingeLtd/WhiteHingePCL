@@ -67,19 +67,22 @@ namespace WhiteHingePCL.Classes
                 AmountNeeded = 0;
             }   
         }
+
         /// <summary>
         /// Constructor for Issues
         /// </summary>
         /// <param name="item"></param>
         /// <param name="loc"></param>
         /// <param name="newIssue"></param>
-        public ZoneData(NewWhlSku item, LocationData loc,NewIssue newIssue)
+        /// <param name="orderData"></param>
+        public ZoneData(NewWhlSku item, LocationData loc,NewIssue newIssue,NewOrder orderData)
         {
             LocationInfo = loc;
             ItemData = item;
             IssueData  = newIssue;
             CurrentZoneDataType = ZoneDataType.Issue;
             AmountNeeded = newIssue.Quantity;
+            OrderData = orderData;
         }
         /// <summary>
         /// Constructor for LowLevels
