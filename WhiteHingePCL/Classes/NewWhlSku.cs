@@ -17,14 +17,18 @@ namespace WhiteHingePCL.Classes
         public string Sku = string.Empty;
 
         /// <summary>
-        /// The item's retail price
-        /// </summary>
-        public double RetailPrice = 0.0;
-        /// <summary>
         /// The item's title
         /// </summary>
         public string ItemTitle = string.Empty;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string DistinguishTitle = string.Empty;
 
+        /// <summary>
+        /// The item's retail price
+        /// </summary>
+        public double RetailPrice = 0.0;
         /// <summary>
         /// 
         /// </summary>
