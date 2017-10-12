@@ -40,4 +40,15 @@ namespace WhiteHingePCL.Exceptions
         /// </summary>
         public override string Message { get; } = "This pin is incorrect please try again";
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public class WrongItemForOrderException : Exception
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public override string Message { get; } = "This item is not attached to this order";
+    }
 }

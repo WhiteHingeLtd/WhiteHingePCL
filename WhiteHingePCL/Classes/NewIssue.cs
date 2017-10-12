@@ -34,6 +34,10 @@ namespace WhiteHingePCL.Classes
         /// <summary>
         /// 
         /// </summary>
+        public string ReportingUserName;
+        /// <summary>
+        /// 
+        /// </summary>
         public string Reason = "";
         /// <summary>
         /// 
